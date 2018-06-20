@@ -45,7 +45,7 @@ module.exports = (robot) ->
 		console.log "A user has executed a server command"
 
 	robot.hear /@Aqua Bot merch/i, (res) ->
-	    res.send "Do you wanna wear cool clothes? \n Well you can get some from #{merch} \n If you want."
+	    res.send "Do you wanna wear cool clothes? \n Well you can get some from #{merch}\nIf you want."
 		console.log "A user has executed a merch command"
 
 	robot.hear /@Aqua Bot report/i, (res) ->
@@ -55,3 +55,7 @@ module.exports = (robot) ->
 	robot.hear /@Aqua Bot twitter/i, (res) ->
 		res.send "#{twitter}"
 		console.log "A user has executed a twitter command"
+
+	robot.hear /405517910774382592/i, (res) ->
+		res.send "#{twitter}"
+		console.log "BANG! 🔫"
