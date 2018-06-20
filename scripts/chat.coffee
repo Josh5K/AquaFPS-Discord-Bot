@@ -33,7 +33,7 @@ module.exports = (robot) ->
 		console.log "A user has executed a youtube command"
 
 	robot.hear /@Aqua Bot wipe/i, (res) ->
-		res.send "The Aquarium wipes #{wipetime}. \n Please refrain from bothering moderators. It is out of their control."
+		res.send "The Aquarium wipes #{wipetime}.\nPlease refrain from bothering moderators. It is out of their control."
 		console.log "A user has executed a wipe command"
 
 	robot.hear /@Aqua Bot about/i, (res) ->
@@ -45,7 +45,7 @@ module.exports = (robot) ->
 		console.log "A user has executed a server command"
 
 	robot.hear /@Aqua Bot merch/i, (res) ->
-	    res.send "Do you wanna wear cool clothes? \n Well you can get some from #{merch}\nIf you want."
+	    res.send "Do you wanna wear cool clothes?\nWell you can get some from #{merch}\nIf you want."
 		console.log "A user has executed a merch command"
 
 	robot.hear /@Aqua Bot report/i, (res) ->
@@ -57,5 +57,5 @@ module.exports = (robot) ->
 		console.log "A user has executed a twitter command"
 
 	robot.hear /405517910774382592/i, (res) ->
-		res.send "#{twitter}"
-		console.log "BANG! 🔫"
+		res.send "BANG! 🔫"
+		console.log "BANG!"
