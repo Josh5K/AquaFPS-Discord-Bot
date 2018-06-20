@@ -24,34 +24,34 @@ merch = "https://teespring.com/stores/aquafps"
 module.exports = (robot) ->
 	console.log "User sent a message."
 
-	robot.hear /twitch/i, (res) ->
+	robot.hear /@Aqua Bot twitch/i, (res) ->
 		res.send "#{twitch}"
 		console.log "A user has executed a twitch command"
 
-	robot.hear /youtube/i, (res) ->
+	robot.hear /@Aqua Bot youtube/i, (res) ->
 		res.send "#{youtube}"
 		console.log "A user has executed a youtube command"
 
-	robot.hear /wipe/i, (res) ->
+	robot.hear /@Aqua Bot wipe/i, (res) ->
 		res.send "The Aquarium wipes #{wipetime}. \n Please refrain from bothering moderators. It is out of their control."
 		console.log "A user has executed a wipe command"
 
-	robot.hear /about/i, (res) ->
+	robot.hear /@Aqua Bot about/i, (res) ->
 		res.send "Aqua Bot is a community made discord chat bot. Wanna help develop Aqua Bot? You can find the repository here - #{github} We encourage everyone to add something new!"
 		console.log "A user has executed a about command"
 
-	robot.hear /server/i, (res) ->
-		res.send "[US] The Aquarium Vanilla 1.5x - connect 142.44.177.154:28015 \n Hosted by: https://rustops.com/"
+	robot.hear /@Aqua Bot server/i, (res) ->
+		res.send "The Aquarium Vanilla 1.5x ODD\nConnect to server using \"client.connect 142.44.177.154:28015\" In your Rust F1 console.\nhttps://rustops.com/ Server Information, FAQ, Rules and Donation infomation.\nFor support help or report go to their discord https://discord.gg/yzwyk5M"
 		console.log "A user has executed a server command"
 
-	robot.hear /merch/i, (res) ->
+	robot.hear /@Aqua Bot merch/i, (res) ->
 	    res.send "Do you wanna wear cool clothes? \n Well you can get some from #{merch} \n If you want."
 		console.log "A user has executed a merch command"
 
-	robot.hear /report/i, (res) ->
+	robot.hear /@Aqua Bot report/i, (res) ->
 		res.send "Reports for The Aquarium Server are done in https://discord.gg/yzwyk5M"
 		console.log "A user has executed a report command"
 
-	robot.hear /twitter/i, (res) ->
+	robot.hear /@Aqua Bot twitter/i, (res) ->
 		res.send "#{twitter}"
 		console.log "A user has executed a twitter command"
