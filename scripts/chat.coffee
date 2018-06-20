@@ -20,6 +20,7 @@ twitch = "https://www.twitch.tv/aquafpsgaming"
 youtube ="https://www.youtube.com/user/macaws7"
 github = "https://github.com/Josh5K/AquaFPS-Discord-Bot"
 merch = "https://teespring.com/stores/aquafps"
+website = "http://www.AquaFPS.com/"
 
 module.exports = (robot) ->
 	console.log "User sent a message."
@@ -56,6 +57,10 @@ module.exports = (robot) ->
 		res.send "#{twitter}"
 		console.log "A user has executed a twitter command"
 
+	robot.hear /@Aqua Bot website/i, (res) ->
+		res.send "#{website}"
+		console.log "A user has executed a website command"
+
 	robot.hear /405517910774382592/i, (res) ->
 		res.send "BANG! 🔫"
-		console.log "BANG!"
+		console.log "BANG! 🔫"
