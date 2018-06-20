@@ -10,6 +10,7 @@
 #   hubot merch - Cool Clothes
 #   hubot report - The Aquarium report informations
 #   hubot twitter - Aquas twitter account 
+#	hubot website - Aquas website 
 #
 # Author:
 #   Josh King
